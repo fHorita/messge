@@ -1,0 +1,210 @@
+.top-visual {
+  width: 50%;
+  object-fit: cover;
+  margin-left: auto;
+  position: relative;
+}
+
+.top-visual::before {
+  content: "All You Need Is Love";
+  font-weight: bold;
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 72px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: -70%;
+  transform: translateY(-130%);
+  color: #cd043e;
+  text-shadow: 5px 3px 6px #cd043e;
+}
+
+.top-visual::after {
+  content: "- 「愛」が1番 -";
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 50%;
+  left: -39%;
+  color: #474747;
+  text-shadow: 4px 2px 2px #828282;
+}
+
+.top-visual img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+main > h3 {
+  width: 70%;
+  margin: 84px auto 0;
+  font-size: 24px;
+  border-bottom: 2px solid #828282;
+  padding-bottom: 9px;
+  color: #474747;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+main > h3:nth-of-type(1):after {
+  content: "";
+  background-image: url(../img/section.png);
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: -18px;
+  left: 110px;
+}
+
+main > h3:nth-of-type(2):after {
+  content: "";
+  background-image: url(../img/section.png);
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: -18px;
+  left: 196px;
+}
+
+.history {
+  width: 70%;
+  margin: 32px auto 0;
+  font-size: 18px;
+  color: #6c656a;
+}
+
+.history tr {
+  line-height: 54px;
+}
+
+.history tr:nth-of-type(2n-1) {
+  background-image: linear-gradient(90deg, #ebeaeb, #f0f0f0);
+}
+
+.history tr:nth-of-type(2n) {
+  background-image: linear-gradient(90deg, #f0f0f0, #fff);
+}
+
+.history tr td:nth-of-type(1) {
+  width: 100px;
+  padding-left: 12px;
+}
+
+.history tr td:nth-of-type(2) {
+  text-align: center;
+  font-weight: bold;
+  width: 180px;
+}
+
+.history tr td:nth-of-type(3) {
+  padding-left: 12px;
+}
+
+.carousel {
+  width: 70%;
+  height: 500px;
+  margin: 32px auto 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform .3s;
+}
+
+.carousel > ul li {
+ min-width: 100%;
+ height: 100%;
+ list-style: none;
+}
+
+.carousel > ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel #prev,
+.carousel #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  font-size: 38px;
+  cursor: pointer;
+  border: none;
+}
+
+.carousel #prev {
+  left: 0;
+  padding: 6px 14px 10px 8px;
+}
+
+.carousel #prev:hover,
+.carousel #next:hover {
+  opacity: .8;
+}
+
+.carousel #next {
+  right: 0;
+  padding: 6px 8px 10px 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+#carouselNav {
+  width: 70%;
+  margin: 24px auto 0;
+  text-align: center;
+}
+
+#carouselNav button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: #cacac9;
+  cursor: pointer;
+}
+
+#carouselNav button + button {
+  margin-left: 8px;
+}
+
+#carouselNav button.current {
+  background-color: #646462;
+}
+
+#carouselShow {
+  width: 200px;
+  height: 42px;
+  background-image: linear-gradient(#e08a97, #cd043e);
+  color: #fff;
+  margin: 22px auto 0;
+  text-align: center;
+  line-height: 42px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 24px;
+  box-shadow: 0 4px 0 #e08a97;
+  cursor: pointer;
+  user-select: none;
+}
+
+#carouselShow:hover {
+  opacity: .8;
+}
+
+#carouselShow:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}

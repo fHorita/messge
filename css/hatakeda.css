@@ -1,0 +1,73 @@
+header {
+  border-bottom: 1px solid #aeadad;
+}
+
+main {
+  width: 80%;
+  margin: 72px auto;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile img {
+  width: 45%;
+  height: 370px;
+  object-fit: cover;
+}
+
+.profile div {
+  margin-left: 40px;
+  width: 100%;
+}
+
+.profile div p:nth-of-type(n+3) {
+  background: linear-gradient(transparent 75%, yellow 75%);
+  color: #5a5859;
+  font-size: 18px;
+  margin-top: 28px;
+  font-weight: bold;
+}
+
+.profile div p:nth-of-type(1) {
+  width: 100%;
+  font-weight: bold;
+  font-size: 48px;
+  border-bottom: 3px solid #b9b6b8;
+  color: #5a5859;
+  line-height: 64px;
+}
+
+.profile div p:nth-of-type(1) span {
+  color: #f278b5;
+}
+
+.profile div p:nth-of-type(2) {
+  color: #5a5859;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 32px;
+}
+
+.profile div p:nth-of-type(n+3) span {
+  color: #f278b5;
+}
+
+.message {
+  margin: 54px 0;
+}
+
+.message > h6 {
+  font-size: 32px;
+  color: #5a5859;
+  border-bottom: 2px solid #b9b6b8;
+  line-height: 54px;
+}
+
+.message > p {
+  margin-top: 24px;
+  font-size: 18px;
+  color: #5a5859;
+  line-height: 32px;
+}
