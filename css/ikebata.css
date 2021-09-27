@@ -65,11 +65,22 @@ main {
   line-height: 54px;
 }
 
-.message > p {
+.message > div.bg {
+  background-image: url("../img/ikebataBg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(247 ,243 ,246, .8);
+  background-blend-mode: lighten;
+}
+
+.message  > div p {
   margin-top: 24px;
   font-size: 18px;
   color: #5a5859;
   line-height: 32px;
+  opacity: 1;
+  margin-left: 15px;
 }
 
 #miss {
@@ -83,6 +94,7 @@ main {
   pointer-events: none;
   transition: 1s;
   transition-delay: 1s;
+  color: #5a5859;
 }
 
 #miss > p {
@@ -116,15 +128,19 @@ main {
 
 #miss > div p {
   margin-left: 40px;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 17px;
   line-height: 38px;
 }
 
-#miss > div p:nth-of-type(1) span {
+#miss > div p span:first-of-type {
   font-weight: bold;
   text-decoration: underline;
   color: tomato;
+}
+
+#miss > div p span:nth-of-type(n+2) {
+  background: linear-gradient(transparent 75%, yellow 75%);
 }
 
 .hidden {

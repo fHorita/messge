@@ -39,8 +39,8 @@ main {
   line-height: 64px;
 }
 
-.profile div p:nth-of-type(1) span {
-  color: #f278b5;
+.profile div p span {
+  color: #fd8726;
 }
 
 .profile div p:nth-of-type(2) {
@@ -48,10 +48,6 @@ main {
   font-size: 24px;
   font-weight: bold;
   margin-top: 32px;
-}
-
-.profile div p:nth-of-type(n+3) span {
-  color: #f278b5;
 }
 
 .message {
@@ -66,7 +62,7 @@ main {
 }
 
 .message > div.bg {
-  background-image: url("../img/hatakedaBg.jpg");
+  background-image: url("../img/sasakiBg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
